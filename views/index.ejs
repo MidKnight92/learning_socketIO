@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Realtime with Socket.io</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <header><span>realtime-circles</span><button>clear</button></header>
+    <section id="circles"></section>
+    <footer><ul id="players"></ul></footer>
+    <!-- Socket.io module on the server helps us out by creating a secret route that returns dynamically generated JS for the client -->
+    <!-- The code returned to the browser is pr-configured with the server's info -->
+    <!-- Load the special client configuration script here before the app.js -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/app.js"></script>
+  </body>
+</html>
